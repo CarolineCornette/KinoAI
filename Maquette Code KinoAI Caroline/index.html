@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>KinoaAI Preparation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/css.css">
+
+</head>
+
+
+<body>
+<!--Top bar-->
+    <div id="app">
+    <div id="app-topbar">
+    <img src="Images/LogoKino.svg" alt="Logo KinoAI" style="margin:5px; margin-left:15px"/>
+     <div style="text-align: center; width: 200px; margin : auto; font-size: small;
+    color: white; font-weight: 300;">Who’s afraid of Virginia Wolf</div>
+
+    <div style="text-align: center; font-size: small;
+   color: white; font-weight: 300;">Part 10</div><img src="Images/arrows.svg" alt="Arrows" style="margin:5px; margin-left:15px; margin-right:100px"/>
+    </div>
+
+
+<div id="app-content">
+
+
+
+<!--Visualisation-->
+    <div class="app-col" id="app-col-1">
+
+
+        <!-- ONGLETS -->
+
+        <div class="tab" id="onglets">
+          <button id="prep-links">Preparation</button>
+          <button id="fram-links">Framing</button>
+          <button id="videoedit-links">Video editing</button>
+          <button id="annot-links">Annotation</button>
+          <button id="export-links">Export</button>
+        </div>
+
+        <div id="video">
+           <div id="box"></div><img id="ajouterSupprimerModifier" alt="outils" height="100" src='Images/Group 18.svg';/>
+           <div class= "listeActeursBis" id= "listeActeursBis">
+
+
+           </div>
+            <img src="Images/video.png" alt="Video"/>
+        </div>
+
+        <div id="video-controls" class="controls" data-state="hidden">
+    <button><img src="Images/play.svg" alt="Play"/></button>
+   <button><img src="Images/pause.svg" alt="Pause"/></button>
+   <div class="progress">
+      <progress id="progress" value="0" min="0">
+         <span id="progress-bar"></span>
+      </progress>
+   </div>
+ </div>
+
+
+
+
+
+
+      <div class="TimeLine" id="timelines-prep">
+      <!--   <ul id="timelines">
+             <li><div class="timelineacteur-nom">Jean</div></li>
+            <li><div class="timelineacteur-nom">Martine</div></li>
+            <li><div class="timelineacteur-nom">Emmanuelle</div></li>
+          </ul>-->
+        </div>
+
+      <div class="TimeLine" id="timelines-framing">
+      </div>
+
+      <div class="TimeLine" id="timelines-annot">
+      </div>
+
+      <div class="TimeLine" id="timelines-export">
+      </div>
+
+      <div class="TimeLine" id="timelines-editing">
+        <img src="Images\timeline_video_editing.png" alt="video-editing">
+      </div>
+
+
+
+
+    </div>
+
+
+
+<!--onglet preparation-->
+<div class="app-col" id="prep-tools">
+<div id="prep-tools">
+
+        <h1>Preparation</h1>
+        <input class="AddActor" id="AddActor"
+       type="button"
+       value="+ Add an actor name">
+
+<br><p>Enter the names of all the actors in the scene</p>
+        <div id="List">
+
+
+
+        </div>
+
+        <div id="PersonalizeTracklet"><span style="white-space:nowrap">Personalize Tracklet</span>
+          <img src="Images\arrow-down.svg" alt="arrow-down" style="margin-left:75px">
+        </div>
+
+        <div id="interfaceOption">
+          Interface Option<img src="Images\arrow-up.svg" alt="arrow-up" class="arrow-up" style="margin-left:232px; margin-top:-17px">
+
+
+          <br><br><input class="HideShow"
+           type="button"
+           value="Hide/Show Header">
+
+           <br><input class="Refresh"
+            type="button"
+            value="Refresh">
+
+          <br>  <input class="ResetZoom"
+             type="button"
+             value="Reset Zoom">
+
+             <div class="card" style="margin-bottom:8px">
+                     <div class="checkbox-container">
+                     <label class="checkbox-label">
+                         <input type="checkbox">
+                         <span class="checkbox-custom rectangular"></span>
+                     </label>
+                     </div>
+                     <div class="input-title">
+                       Draw Track
+                     </div>
+                  </div>
+
+              <div class="card">
+                      <div class="checkbox-container">
+                      <label class="checkbox-label">
+                          <input type="checkbox">
+                          <span class="checkbox-custom rectangular"></span>
+                      </label>
+                      </div>
+                      <div class="input-title">
+                        Render Pose
+                      </div>
+                     </div>
+
+
+               </div>
+
+               <div class="card-out">
+                       <div class="checkbox-container">
+                       <label class="checkbox-label">
+                           <input type="checkbox">
+                           <span class="checkbox-custom rectangular"></span>
+                       </label>
+                       </div>
+                       <div class="input-title">
+                         Show Tracklet List
+                       </div>
+                      </div>
+
+        <br> <input class="Save"
+         type="button"
+         value="Save">
+    </div>
+    </div>
+
+
+
+
+
+<!--framing-->
+    <div class="app-col" id="framing-tools">
+<div id="framing">
+
+    <h1>Framing</h1>
+<img src="Images/framing.png" alt="framing-tools"/>
+
+
+</div>
+</div>
+
+<!--editing-->
+  <div class="app-col" id="editing-tools">
+<div id="editing">
+
+<h1>Video Editing</h1>
+<img src="Images/editing.png" alt="editing-tools"/>
+
+</div>
+</div>
+
+<!--annotation-->
+<div class="app-col" id="annot-tools">
+<div id="annotation">
+
+<h1>Annotation</h1>
+
+<textarea cols="30" rows="10">Create an annotation</textarea>
+
+<input class="Save-annot"
+ type="button"
+ value="Save">
+
+</div>
+</div>
+
+<!--export-->
+<div class="app-col" id="export-tools">
+<div id="export">
+
+<h1>Export</h1>
+
+<div id="interfaceOption">
+Interface Option
+
+  <br><br><input class="HideShow-Export"
+   type="button"
+   value="Hide/Show Header">
+
+   <br><input class="Refresh-Export"
+    type="button"
+    value="Refresh">
+
+  <br>  <input class="ResetZoom-Export"
+     type="button"
+     value="Reset Zoom">
+
+     <input class="Save-Export"
+      type="button"
+      value="Save">
+
+
+
+
+</div>
+</div>
+
+
+</main>
+
+
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
